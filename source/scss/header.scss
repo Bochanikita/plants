@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  z-index: 2;
 }
 
 .header-logo-link {
@@ -14,14 +15,13 @@
 
   border: 0px;
   margin-top: 36px;
+  margin-bottom: 36px;
 }
 
 .main-nav__menu-button {
   border: none;
 
   padding: 0;
-
-  margin-bottom: 36px;
 }
 .main-nav__menu-button:hover {
   width: 41px;
@@ -40,9 +40,9 @@
   transition: all 0.3s ease-out 0s;
 }
 .main-nav_opened {
-  transform: translate(0%, 0px);
+  transform: translate(0px, 97px);
 
-  margin-top: 80px;
+  // margin-top: 80px;
 
   background-color: $light-green-bg;
 }
@@ -66,7 +66,7 @@
 
   transition: 0.2s;
 
-  border-bottom: 0.5px solid $orange-button;
+  border-bottom: 0.3px solid $orange-button;
 }
 
 .main-nav__link {
