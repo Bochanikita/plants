@@ -122,44 +122,53 @@
       <div class="content">
         <h2 class="prices__title">Prices</h2>
         <div class="prices">
-          <div class="prices__variants">
-            <!-- Basics -->
-            <button class="prices__button_basics prices__button_closed">Basics
-              <img class="prices__closed" src="img/prices_btn_mobile.svg" alt="">
-              <img class="prices__opened" src="img/prices_btn_mobile_opened.svg" alt="">
-            </button>
-            <div class="prices__basics_closed">
-              <p class="prices__desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-              <p class="prices__price"><span class="prices__value">$25</span> / per hour</p>
-              <button class="prices__btn-order">Order</button>
-            </div>
-
-            <!-- Standart -->
-            <button class="prices__button_standart prices__button_closed">Standard
-              <img class="prices__closed" src="img/prices_btn_mobile.svg" alt="">
-              <img class="prices__opened" src="img/prices_btn_mobile_opened.svg" alt="">
-            </button>
-            <div class="prices__basics_closed">
-              <p class="prices__desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-              <p class="prices__price"><span class="prices__value">$25</span> / per hour</p>
-              <button class="prices__btn-order">Order</button>
-            </div>
-
-            <!-- Pro -->
-            <button class="prices__button_pro prices__button_closed">Pro care
-              <img class="prices__closed" src="img/prices_btn_mobile.svg" alt="">
-              <img class="prices__opened" src="img/prices_btn_mobile_opened.svg" alt="">
-            </button>
-            <div class="prices__basics_closed">
-              <p class="prices__desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-              <p class="prices__price"><span class="prices__value">$25</span> / per hour</p>
-              <button class="prices__btn-order">Order</button>
-            </div>
-          </div>
-
+          <ul class="prices__variants">
+            <li class="prices__var-item">
+              <!-- Basics -->
+              <button class="prices__button prices__button_closed">
+                <span class="prices__btn-text">Basics</span>
+                <img class="prices__closed" src="img/prices_btn_mobile.svg" alt="">
+                <img class="prices__opened visually-hiden" src="img/prices_btn_mobile_opened.svg" alt="">
+              </button>
+              <div class="prices__item prices__item_basics visually-hiden">
+                <div class="price__line"></div>
+                <p class="prices__desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="prices__price"><span class="prices__value">$15</span> / per hour</p>
+                <button class="prices__btn-order">Order</button>
+              </div>
+            </li>
+            <li class="prices__var-item">
+              <!-- Standart -->
+              <button class="prices__button prices__button_closed">
+                <span class="prices__btn-text">Standard</span>
+                <img class="prices__closed" src="img/prices_btn_mobile.svg" alt="">
+                <img class="prices__opened visually-hiden" src="img/prices_btn_mobile_opened.svg" alt="">
+              </button>
+              <div class="prices__item prices__item_standart visually-hiden">
+                <div class="price__line"></div>
+                <p class="prices__desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="prices__price"><span class="prices__value">$25</span> / per hour</p>
+                <button class="prices__btn-order">Order</button>
+              </div>
+            </li>
+            <li class="prices__var-item">
+              <!-- Pro -->
+              <button class="prices__button prices__button_closed">
+                <span class="prices__btn-text">Pro care</span>
+                <img class="prices__closed" src="img/prices_btn_mobile.svg" alt="">
+                <img class="prices__opened visually-hiden" src="img/prices_btn_mobile_opened.svg" alt="">
+              </button>
+              <div class="prices__item prices__item_pro visually-hiden">
+                <div class="price__line"></div>
+                <p class="prices__desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="prices__price"><span class="prices__value">$35</span> / per hour</p>
+                <button class="prices__btn-order">Order</button>
+              </div>
+            </li>
+          </ul>
           <!-- Contacts -->
           <div class="prices__contacts">
-            <h3 class="prices__text">Our best gardeners are ready to help you</h3>
+            <h3 class="prices__text">Our best <span class="green">gardeners</span> are ready to help you</h3>
             <button class="prices__contact-button">Contact us</button>
             <img src="" alt="" class="prices__image">
           </div>
@@ -170,11 +179,15 @@
       <div class="content">
         <h2 class="contact__title">Contact us</h2>
         <div class="menu-wrapper">
-          <button class="contact__button">City
+          <button class="contact__button contact__button_closed">
+            <span class="contact__btn-text">City</span>
             <img src="img/prices_btn_mobile.svg" alt="" class="contact__btn_closed">
-            <img src="img/prices_btn_mobile_opened.svg" alt="" class="contact__btn_opened">
+            <img src="img/prices_btn_mobile_opened.svg" alt="" class="contact__btn_opened visually-hiden">
           </button>
-          <ul class="contact__list">
+          <ul class="contact__list visually-hiden">
+            <li class="contact__item">
+              <button class="contact__btn-city">Canandaigua, NY</button>
+            </li>
             <li class="contact__item">
               <button class="contact__btn-city">New York City</button>
             </li>
@@ -185,6 +198,83 @@
               <button class="contact__btn-city">Sherrill, NY</button>
             </li>
           </ul>
+          <div class="contact__cities-wrapper visually-hiden">
+            <ul class="contact__cities-list">
+              <li class="contact__cities-item visually-hiden">
+                <table class="contact__table">
+                  <tbody>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">City:</td>
+                      <td class="contact__info-data">Canandaigua, NY</td>
+                    </tr>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">Phone:</td>
+                      <td class="contact__info-data">+1 585 393 0001</td>
+                    </tr>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">Office<br>adress:</td>
+                      <td class="contact__info-data">151 Charlotte Street</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="contact__cities-item visually-hiden">
+                <table class="contact__table">
+                  <tbody>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">City:</td>
+                      <td class="contact__info-data">New York City</td>
+                    </tr>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">Phone:</td>
+                      <td class="contact__info-data">+1	212	456 0002</td>
+                    </tr>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">Office<br>adress:</td>
+                      <td class="contact__info-data">9 East 91st Street</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="contact__cities-item visually-hiden">
+                <table class="contact__table">
+                  <tbody>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">City:</td>
+                      <td class="contact__info-data">Yonkers, NY</td>
+                    </tr>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">Phone:</td>
+                      <td class="contact__info-data">+1	914	678 0003</td>
+                    </tr>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">Office<br>adress:</td>
+                      <td class="contact__info-data">511 Warburton Ave</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="contact__cities-item visually-hiden">
+                <table class="contact__table">
+                  <tbody>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">City:</td>
+                      <td class="contact__info-data">Sherrill, NY</td>
+                    </tr>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">Phone:</td>
+                      <td class="contact__info-data">+1	315	908 0004</td>
+                    </tr>
+                    <tr class="contact__table-row">
+                      <td class="contact__first-data">Office<br>adress:</td>
+                      <td class="contact__info-data">14 WEST Noyes BLVD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <button class="contact__call-btn">Call us</button>
+            </div>
           <img src="img/contact_woman_mobile.png" alt="" class="contact__img">
         </div>
       </div>
