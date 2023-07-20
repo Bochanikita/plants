@@ -1,0 +1,150 @@
+@media (max-width: 767px) {
+  .header {
+    background-color: $light-green-bg;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 2;
+  }
+  
+  .header-logo-link {
+    display: inline-block;
+  
+    border: 0px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  
+  .main-nav__menu-button {
+    border: none;
+  
+    padding: 0;
+  }
+  .main-nav__menu-button:hover {
+    width: 41px;
+    height: 25px;
+  }
+  .main-nav__menu-button:active {
+    width: 38px;
+    height: 22px;
+  }
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translate(-100%, 0px);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .main-nav_opened {
+    transform: translate(0px, 97px);
+  
+    // margin-top: 80px;
+  
+    background-color: $light-green-bg;
+  }
+  
+  .main-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    text-align: center;
+  }
+  
+  .main-nav__item {
+    border-top: 0.5px solid $grey-border;
+    font-size: 16px;
+  }
+  
+  .main-nav__item:hover {
+    color: $orange-text;
+    font-size: 17px;
+  
+    transition: 0.2s;
+  
+    border-bottom: 0.3px solid $orange-button;
+  }
+  
+  .main-nav__link {
+    display: block;
+  
+    text-decoration: none;
+  
+    color: $black;
+    font-family: $title-inika-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+  
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .main-nav__link:hover {
+    color: $orange-text;
+  }
+}
+
+@media (min-width: 767px) {
+  .header {
+    background-color: $light-green-bg;
+  }
+  .main-nav__menu-button {
+    display: none;
+  }
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .main-nav {
+    display: block;
+  }
+  
+  .main-nav__list {
+    display: flex;
+    gap: 46px;
+
+    list-style: none;
+  }
+  
+  .main-nav__item {
+    font-size: 16px;
+  }
+  
+  .main-nav__item:hover {
+    color: $orange-text;
+    font-size: 17px;
+  
+    transition: 0.2s;
+  }
+  
+  .main-nav__link {
+    display: block;
+  
+    text-decoration: none;
+  
+    color: $black;
+    font-family: $title-inika-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+  
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .main-nav__link:hover {
+    color: $orange-text;
+  }
+}
+@media (min-width: 1240px) {
+  .main-nav__menu-button {
+    display: none;
+  }
+}
